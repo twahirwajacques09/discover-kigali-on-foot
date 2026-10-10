@@ -102,3 +102,9 @@ const shareButton=document.getElementById('shareSite');const shareStatus=documen
 if(shareButton){shareButton.addEventListener('click',async()=>{const payload={title:document.title,text:'Discover Kigali on Foot — explore Kigali with local walking tours.',url:window.location.href};try{if(navigator.share){await navigator.share(payload);shareStatus.textContent='';}else if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(payload.url);shareStatus.textContent='Link copied!';}else{window.prompt('Copy this website link:',payload.url);shareStatus.textContent='';}}catch(err){if(err&&err.name==='AbortError')return;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(payload.url);shareStatus.textContent='Link copied!';}else{window.prompt('Copy this website link:',payload.url);}}catch(e){window.prompt('Copy this website link:',payload.url);}}});}
 </script>
 </body></html>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://discover-kigali-on-foot.pages.dev/</loc>
+  </url>
+</urlset>
