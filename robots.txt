@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://discover-kigali-on-foot.pages.dev/sitemap.xml
