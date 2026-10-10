@@ -1,0 +1,1 @@
+# discover-kigali-on-foot
